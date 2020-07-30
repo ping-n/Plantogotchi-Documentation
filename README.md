@@ -15,7 +15,9 @@ RPlantogotchi
 | 7   | [Application Architecture Diagram](#application-architecture-diagram) |
 | 8   | [User Stories](#user-stories)                                         |
 | 9   | [Wireframe](#wire-frames)                                             |
-| 10  | [Task Management](#task-management)                                   |
+| 10  | [Screenshots](#screenshots)                                           |
+| 11  | [Testing](#testing)                                                   |
+| 12  | [Task Management](#task-management)                                   |
 
 
 ## The Project
@@ -56,7 +58,7 @@ Please clone Plantogotchi from the following repository:
 
 React Front-end repository - https://github.com/ping-n/plantogotchi-client
 
-React Front-end repository - https://github.com/novacoole/plantogotchi-api
+React Back-end repository - https://github.com/novacoole/plantogotchi-api
 
 ### Front-end installation
 
@@ -110,7 +112,7 @@ Create a new database in PostgreSQL
 ```
 rails db:create
 ```
-create the schema for database
+Create the schema for database
 ```
 rails db:migrate
 ```
@@ -252,14 +254,18 @@ Project Management Tools
 ### Front-end Library
 
 
-| #   | Library                                                                                                                                                        |
-| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | Axios: Promised based HTTP client for the browser and node.js which allow us to make HTTP request to our rails api                                             |
-| 2   | Semantic-ui-React: Component based semantic ui integration with React, allow us to follow add semantic styling to our project by using semantic ui component.  |
-| 3   | Semantic-ui-css: Allow us to import the css styling from semantic ui, we are using a less version which give us more control over semantic ui default styling. |
-| 4   | Node Sass: Node-sass is library that bind Node.js to Libsass, which allow us to write scss codes in this project as it automatically compile scss into css.    |
-| 5   | React-router-dom:                                                                                                                                              |
-
+| #   | Library                                                                                                                                                                                                                                  |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Axios: Promised based HTTP client for the browser and node.js which allow us to make HTTP request to our rails api                                                                                                                       |
+| 2   | Semantic-ui-React: Component based semantic ui integration with React, allow us to follow add semantic styling to our project by using semantic ui component.                                                                            |
+| 3   | Semantic-ui-css: Allow us to import the css styling from semantic ui, we are using a less version which give us more control over semantic ui default styling.                                                                           |
+| 4   | Node Sass: Node-sass is library that bind Node.js to Libsass, which allow us to write scss codes in this project as it automatically compile scss into css.                                                                              |
+| 5   | React-router-dom: React router dom allow us to create a single page application for this project as it load section of the webpage so it render instantly without having to reload the page each time the interact with the application. |
+| 6   | Rsuite: We use React suite to implement the admin sliders for control different aspect of the application such water drop rate, plant growth rate etc.                                                                                   |
+| 7   | Cypress: Cypress was used for E2E testing, which allow us to simulate the user experience via having a bot testing element of the application.                                                                                           |
+| 8   | Testing-library: Testing library provide us with the tools to write tests for this application through Mocha and Chai                                                                                                                    |
+| 9   | Craco: We use craco in order to edit semantic ui variable, creating configuration to make a custom semantic theme for our application                                                                                                    |
+| 10  | Test-data-bot: We use this library for our e2e testing as it allow to generate fake data for cypress to do automated testing                                                                                                             |
 
 ### Back-end Library
 
@@ -507,6 +513,35 @@ Mobile friendly
 
 <img src="./docs/screenshots/mobile-friendly.png" width="60%">
 
+## Testing
+
+---
+
+### Manual Testing
+
+Manual Testing Link - https://docs.google.com/spreadsheets/d/11GDbPEAAhAQs71G6MZy2tKLSG8qsmmroCH1N3hXAQY4/edit?usp=sharing
+
+<img src="./docs/Testing/mt.png" width="60%">
+
+Manual Testing Client
+
+<img src="./docs/Testing/mt-client.png" width="60%">
+
+Manual testing Api
+
+<img src="./docs/Testing/mt-api.png" width="60%">
+
+### E2E Testing (Cypress)
+
+<img src="./docs/Testing/cypress.png" width="60%">
+
+### Rspec CI (Git Action)
+
+<img src="./docs/Testing/rspec-ci.png" width="60%">
+
+### Testing Coverage for api (Simple Cov)
+
+<img src="./docs/Testing/simplecov.png" width="60%">
 
 ## Task Management
 
@@ -514,11 +549,11 @@ Mobile friendly
 
 This project utilises Trello as a project management tool which allows us to allocate tasks to individual members of the team. We also utilise Discord as a platform to collaborate on this project, allowing us to hold meetings and communicate with each other to effectively resolve issues and allocate new tasks to be completed. During the project we will implement Agile development principles to develop our application by creating an effective road-map and working on the project in a modular process by dividing tasks to into smaller achievable tasks.
 
-
 We have provided screenshots below to illustrate the progress of the project each day. As a team we have a daily stand-up in which we go through what we have done the previous day and what we plan to do that day. We also allocate each card/task to a specific member to complete each day. Within the Trello board we utilise the built-in features such as colour labels and checklist to effectively plan and delegate tasks through the member assigning system. 
 
+We also kept dev journal within our Trello board for part B to let each member know what the other person worked on that day and also allow us to keep track of tasks that we have accomplished.
 
-Below is the Trello board progress for Part A of the project:
+Below is the Trello board progress for the project:
 
 Trello Link:
 
@@ -561,24 +596,64 @@ Day Four was the designated final day we allocated for Part A of the project as 
 
 Day One:
 
-On Day One we mainly focused on gathering inspiration and delegating the first set of tasks to individual team members according to their strengths and weaknesses. Day one is relatively empty because we spent a huge amount of our time having a meeting to plan out the features of the application, in accordance to the criteria for the project. 
+On day one, we started off by planning and talking about the actual logic of our application, defining a road-map and delegated tasks according to our strengths and weaknesses. One person was assigned to the back-end api development and another person established the front-end framework for the application. We also went through the project brief as a team and discuss how we will tackle the project to ensure we meet the project criteria. 
 
 <img src="./docs/Trello-B/DAY-1.png" width="80%">
 
 Day Two:
 
-Day Two represents the starting point of the project, we had a quick meeting in the morning to discuss and delegate the tasks for the day. During the meeting we created the ERD as a team (via pair programming) so we both understand the information we need to store for the application. We also spent the entire day planning and setting up the overall objectives to effectively meet the deadline of the project.
+Day Two involve more planning as a team, such as we library we could use to build the application. Alex was assigned the responsibility to work on the back-end, while I set up react structure for the front-end and begin researching library such Formik and Css framework we could use to speed up development time. 
 
 <img src="./docs/Trello-B/DAY-2.png" width="80%">
 
 Day Three:
 
-Day Three involves starting and finishing off the design elements of the application such as wire-frames, user stories and discussing about the features we need to create in order to meet our MVP for the application. Today we also studied the criteria in more details to ensure we are meeting the requirements for Distinction to High Distinction for the assessment.
+Day Three involves finishing the MVP of the rails api and research on how to implement authentication to our application. As a team we settle on using jwt token as a form of authentication. I worked on implementing the basic route we need to get start. 
 
 <img src="./docs/Trello-B/DAY-3.png" width="80%">
 
 Day Four:
 
-Day Four was the designated final day we allocated for Part A of the project as we wanted to prioritise development time to work on Part B. Day four mainly involve proofreading the Readme and adding all relevant details to ensure we met the set criteria of the assessment. We also included attachments within the Trello cards to showcase the tasks we have completed as well as to gather input in regards to what else we needed to include in our documentation. 
+Day Four we had our daily stand up and a short meeting where we decided to use semantic-ui-react for styling our application. Alex finished off rails api which give us access to a live database which we can use to start testing out basic user authentication. We implemented JWT token with knock and did more research on how to implement it with the front-end by having protected route.  
 
 <img src="./docs/Trello-B/DAY-4.png" width="80%">
+
+Day Five:
+
+Day Five we begin with our daily stand up and delegated each other some tasks. I began cypress e2e testing for our user authentication and static landing page. Alex was tasked with creating the storage for our spritesheets for the breed and started work on the breed form. We also worked on the main logic of our application as a team through pair programming by creating a little terminal app to test our logic and integrate it into our application.
+
+<img src="./docs/Trello-B/DAY-5.png" width="80%">
+
+Day Six:
+
+Day Six involved finishing all the CRUD functionalities within our application and begin creating the static html pages. Alex worked on the CRUD for breeds and Plants. I worked on finishing all the static pages such as Home, FAQ and About.
+
+<img src="./docs/Trello-B/DAY-6.png" width="80%">
+
+Day Seven:
+
+Day Seven begin with a meeting in the morning to discuss about current state of the application and any last minute feature we should include in our application. Alex begin going our huge bug list on trello and begin debugging. While I worked on styling teh application and finalizing the design of our application and main plant pages.
+
+<img src="./docs/Trello-B/DAY-7.png" width="80%">
+
+Day Eight:
+
+Day Eight is all about hitting the MVP for our application. We removed any libraries we wasn't using in the application and deployed to netlify. I changed some styling to make the application responsive on mobile and started manual testing to find any major bugs. Alex started manual testing for the rails api and fixed many of our existing bugs.
+
+<img src="./docs/Trello-B/DAY-8.png" width="80%">
+
+Final Day:
+
+For the final day of the project, we begin with our daily stand up and discuss any more tasks we needed to complete to meet teh project criteria. Alex fixed all existing bugs while I finished off the manual testing post any bug I found on our Trello board so Alex can fix them. Once we are happy with the state, we worked on preparation to submit this project such as this Readme, presentation slides, linting all our repositories and finish off any leftover tasks on the Trello board. 
+
+<img src="./docs/Trello-B/DAY-9.png" width="80%">
+
+### Task Assignment
+
+---
+
+We delegate individual tasks according to our strengths and weaknesses. Alex prefer to work on the back-end and I was delegated with the front-end. We both had alot of fun designing and building the application within such a tight deadline.
+
+Alex - Back-end api, React front-end, debugging, spritesheet animation, Manual testing(api), back-end testing, styling the main plant modal amd Documentation.
+
+Ping - React front-end, Styling, Design, debugging, E2E testing, Manual testing(client), Documentation.

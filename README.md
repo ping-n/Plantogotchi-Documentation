@@ -14,10 +14,11 @@ RPlantogotchi
 | 6   | [Dataflow Diagram](#dataflow-diagram)                                 |
 | 7   | [Application Architecture Diagram](#application-architecture-diagram) |
 | 8   | [User Stories](#user-stories)                                         |
-| 9   | [Wireframe](#wire-frames)                                             |
-| 10  | [Screenshots](#screenshots)                                           |
-| 11  | [Testing](#testing)                                                   |
-| 12  | [Task Management](#task-management)                                   |
+| 9   | [Design](#design)                                                     |
+| 10  | [Wireframe](#wire-frames)                                             |
+| 11  | [Screenshots](#screenshots)                                           |
+| 12  | [Testing](#testing)                                                   |
+| 13  | [Task Management](#task-management)                                   |
 
 
 ## The Project
@@ -108,19 +109,27 @@ Install rails dependencies
 ```
 bundle install
 ```
-Create a new database in PostgreSQL
+You will need to delete the credentials.yml.enc at the following path 'config/credentials.yml.enc'
+
+After that you will need to generate a new master key so that knock generate jwt token for user authentication
+
+4: Please run the following command to generate a new master key
+```
+EDITOR=vim rails credentials:edit
+```
+5: Create a new database in PostgreSQL
 ```
 rails db:create
 ```
-Create the schema for database
+6: Create the schema for database
 ```
 rails db:migrate
 ```
-Seed the database with different plants breed and test users
+7: Seed the database with different plants breed and test users
 ```
 rails db:seed
 ```
-Start the rails server
+8: Start the rails server
 ```
 rails start
 ```
@@ -542,6 +551,8 @@ Manual testing Api
 ### Testing Coverage for api (Simple Cov)
 
 <img src="./docs/Testing/simplecov.png" width="60%">
+
+A simple coverage zip is attached in the docs folder. [Simple Cov Zip](docs/simplecov-report.zip)
 
 ## Task Management
 

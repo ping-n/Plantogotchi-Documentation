@@ -6,18 +6,32 @@
 
 | #   | Content                                                               |
 | --- | --------------------------------------------------------------------- |
-| 1   | [Purpose](#purpose)                                                   |
-| 2   | [Functionality / features](#functionality--features)                  |
-| 3   | [Target Audience](#target-audience)                                   |
-| 4   | [Tech Stack](#tech-stack)                                             |
-| 5   | [Dataflow Diagram](#dataflow-diagram)                                 |
-| 6   | [Application Architecture Diagram](#application-architecture-diagram) |
-| 7   | [User Stories](#user-stories)                                         |
-| 8   | [Wireframe](#wire-frames)                                              |
-| 9   | [Task Management](#task-management)                                   |
+| 1   | [The Project](#the-project)                                           |
+| 2   | [Installation Guide](#installation-guide)                             |
+| 3   | [Functionality / features](#functionality--features)                  |
+| 4   | [Target Audience](#target-audience)                                   |
+| 5   | [Tech Stack](#tech-stack)                                             |
+| 6   | [Dataflow Diagram](#dataflow-diagram)                                 |
+| 7   | [Application Architecture Diagram](#application-architecture-diagram) |
+| 8   | [User Stories](#user-stories)                                         |
+| 9   | [Wireframe](#wire-frames)                                             |
+| 10  | [Task Management](#task-management)                                   |
 
 
-## Purpose
+## The Project
+
+---
+
+
+This is a team project created for the final assessment during the Coder Academy bootcamp. For this assessment we had one week for planning and less than two week to code. We had to create a React App with a Ruby on Rails backend.
+
+Plantogotchi took inspiration from Tamagotchi giving users the ability to grow plants from a little seedling to a fully grown plant.
+
+Netlify - https://plantogotchi.netlify.app
+
+Heroku Api Backend - https://documenter.getpostman.com/view/11888283/T17Q6k6B?version=latest
+
+### Purpose
 
 ---
 
@@ -32,6 +46,99 @@ Plantogotchi was created as a simple web application that allow users escape fro
 Source:
 - https://www.thesill.com/blogs/care-miscellaneous/why-you-need-plants-in-your-life
 - https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/conditions/infectious+diseases/covid+2019/coronavirus+disease+2019+covid-19
+
+
+## Installation Guide
+
+---
+
+Please clone Plantogotchi from the following repository:
+
+React Front-end repository - https://github.com/ping-n/plantogotchi-client
+
+React Front-end repository - https://github.com/novacoole/plantogotchi-api
+
+### Front-end installation
+
+---
+
+1: Clone the this [repository](https://github.com/ping-n/plantogotchi-client) through git or download as a zip file
+
+For front-end repo, please run the following commands from the root folder of the repository through a cli of your choice.
+
+Run yarn install to install on the dependencies for this react app
+```
+yarn install
+```
+
+2: You will need to create a .env file in your root folder for this repository and add the following codes inside your .env file.
+
+Add codes below to .env:
+
+We have chosen to use port 3000 for our rail api, if you are working on a different port then change the number accordingly. The PORT variable tell our local react server that start on port 8080.
+```
+REACT_APP_BACKEND_URL=http://localhost:3000
+PORT=8080
+```
+
+3: You can now start the react server using the following command through your cli.
+
+```
+yarn start
+```
+
+This will load the React front-end of Plantogotchi in a new tab of your default browser. You will now need to install the back-end of the application for the full experience.
+
+
+### Back-end installation
+
+---
+
+1: Clone the this [repository](https://github.com/novacoole/plantogotchi-api) through git or download as a zip file
+
+2: For the back-end repo, please run the following commands from the root folder of the repository through a cli of your choice.
+
+3: This application require an installation of PostgreSQL to run which can download from the following -https://www.postgresql.org/download/
+
+Run the following commands in the order listed below
+
+Install rails dependencies
+```
+bundle install
+```
+Create a new database in PostgreSQL
+```
+rails db:create
+```
+create the schema for database
+```
+rails db:migrate
+```
+Seed the database with different plants breed and test users
+```
+rails db:seed
+```
+start the rails server
+```
+rails start
+```
+
+The back-end server will need to be running alongside the front-end server to enjoy the intended experience of Plantogotchi.
+
+### Testing Data
+
+---
+
+Test Users 
+
+| #                | Users          | Password |
+| ---------------- | -------------- | -------- |
+| 1 (Admin User)   | admin@test.com | password |
+| 2  (Normal User) | test@test.com  | password |
+
+- Admin user will have the ability to create new breeds and perform CRUD on plants and breeds. Admin User will also have access to sliders to control element of the application.
+- Normal user will only have the ability to create new plants and interact with their plants.
+
 
 ## Functionality / features
 
@@ -96,36 +203,40 @@ Project Management Tools
 
 
 
-| #    | Component                                                    |
-| ---- | ------------------------------------------------------------ |
-| 1    | Ruby on Rails: Back-end of the web application, enable the web application to have a persistence of data. |
-| 2    | HTML5 & CSS: To output the application content in the browser while providing the ability to style pages of the web application. |
-| 3    | React.js: A JavaScript framework that allows the creation of quick and powerful client-side web applications. |
-| 4    | Node.js: A JavaScript runtime environment which allows JavaScript code to run outside the web browser, such as on a server. |
-| 5    | Heroku: A deployment platform for the web application which hosts our back-end (Rails API) and persistent database. |
-| 6    | Netlify: A deployment platform to host the front end of web application (React). |
-| 7    | PostgreSQL: A relational database management system to hold all of the persistent data from the web application. |
-| 8    | Git: Version control to backup source code of the application in local environment. |
-| 9    | Github: Web repository hosting service, which allow members within the team to collaborate on the project as well as providing a remote backup of source code. |
-| 10   | Trello: A web application that allow team members to manage the project by creating and assigning tasks. |
-| 11   | Discord: An application for instant messaging and VoIP service. We use discord to communicate ideas and hold daily stand ups. |
+| #   | Component                                                                                                                                                      |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Ruby on Rails: Back-end of the web application, enable the web application to have a persistence of data.                                                      |
+| 2   | HTML5 & CSS: To output the application content in the browser while providing the ability to style pages of the web application.                               |
+| 3   | React.js: A JavaScript framework that allows the creation of quick and powerful client-side web applications.                                                  |
+| 4   | Node.js: A JavaScript runtime environment which allows JavaScript code to run outside the web browser, such as on a server.                                    |
+| 5   | Heroku: A deployment platform for the web application which hosts our back-end (Rails API) and persistent database.                                            |
+| 6   | Netlify: A deployment platform to host the front end of web application (React).                                                                               |
+| 7   | PostgreSQL: A relational database management system to hold all of the persistent data from the web application.                                               |
+| 8   | Git: Version control to backup source code of the application in local environment.                                                                            |
+| 9   | Github: Web repository hosting service, which allow members within the team to collaborate on the project as well as providing a remote backup of source code. |
+| 10  | Trello: A web application that allow team members to manage the project by creating and assigning tasks.                                                       |
+| 11  | Discord: An application for instant messaging and VoIP service. We use discord to communicate ideas and hold daily stand ups.                                  |
 
-### Front-end Library
+
+## External Library
 
 ---
 
-| #    | Library                                                    |
-| ---- | ------------------------------------------------------------ |
-| 1    | Axios: Promised based HTTP client for the browser and node.js which allow us to make HTTP request to our rails api  |
-| 2    | Semantic-ui-React: Component based semantic ui integration with React, allow us to follow add semantic styling to our project by using semantic ui component. |
-| 3    | Semantic-ui-css: Allow us to import the css styling from semantic ui, we are using a less version which give us more control over semantic ui default styling. |
-| 4    | Node Sass: Node-sass is library that bind Node.js to Libsass, which allow us to write scss in this project as it automatically compile scss into css. |
-| 5    | React-router-dom:  |
+### Front-end Library
+
+
+| #   | Library                                                                                                                                                        |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Axios: Promised based HTTP client for the browser and node.js which allow us to make HTTP request to our rails api                                             |
+| 2   | Semantic-ui-React: Component based semantic ui integration with React, allow us to follow add semantic styling to our project by using semantic ui component.  |
+| 3   | Semantic-ui-css: Allow us to import the css styling from semantic ui, we are using a less version which give us more control over semantic ui default styling. |
+| 4   | Node Sass: Node-sass is library that bind Node.js to Libsass, which allow us to write scss codes in this project as it automatically compile scss into css.    |
+| 5   | React-router-dom:                                                                                                                                              |
 
 
 ### Back-end Library
 
----
+
 
 
 

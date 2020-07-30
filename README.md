@@ -125,7 +125,30 @@ rails start
 
 The back-end server will need to be running alongside the front-end server to enjoy the intended experience of Plantogotchi.
 
-### Testing Data
+##### Cors
+
+By default the following URLs are whitelisted in the CORS configuration file:
+
+* 'http://localhost:3000'
+* 'http://localhost:3001'
+* 'http://localhost:8080', 
+* 'https://plantogotchi.netlify.app'
+
+If you plan on running the client-side server on a different port, you will need to manually add this localhost URL to the '/config/initializers/cors.rb' file.
+
+##### Rspec
+
+You can run the RSpec suite tests by running the following command in your terminal within the root directory of the ''/plantogotchi-api' repository.
+
+```bash
+bin/rspec
+```
+
+##### Testing API with Postman
+
+[Our Postman documentation](https://documenter.getpostman.com/view/11888283/T17Q6k6B?version=latest) outlines how to hit all the accessible endpoints of our API both locally and in production.
+
+### Testing Information
 
 ---
 

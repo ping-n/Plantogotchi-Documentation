@@ -1,4 +1,4 @@
-RPlantogotchi
+Plantogotchi
 
 ## Table of Contents:
 

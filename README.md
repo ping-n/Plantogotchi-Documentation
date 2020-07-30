@@ -116,6 +116,7 @@ After that you will need to generate a new master key so that knock generate jwt
 4: Please run the following command to generate a new master key
 ```
 EDITOR=vim rails credentials:edit
+<!-- Press enter and type :wq if you are stuck in vim -->
 ```
 5: Create a new database in PostgreSQL
 ```

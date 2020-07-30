@@ -116,6 +116,8 @@ After that you will need to generate a new master key so that knock generate jwt
 4: Please run the following command to generate a new master key
 ```
 EDITOR="code --wait" bin/rails credentials:edit
+<!-- then exit out of the master.key file -->
+<!-- if you receive file encrypted message in your terminal then you done it correctly  -->
 ```
 5: Create a new database in PostgreSQL
 ```
@@ -129,6 +131,14 @@ rails db:migrate
 ```
 rails db:seed
 ```
+
+or
+
+Run the command below which is a combination of the commands above.
+```
+rails db:setup
+```
+
 8: Start the rails server
 ```
 rails start

@@ -1,4 +1,4 @@
-# Plantogotchi
+RPlantogotchi
 
 ## Table of Contents:
 
@@ -139,6 +139,10 @@ Test Users
 - Admin user will have the ability to create new breeds and perform CRUD on plants and breeds. Admin User will also have access to sliders to control element of the application.
 - Normal user will only have the ability to create new plants and interact with their plants.
 
+Seed Data
+
+* There are also 10 additional seed users, with 5 plants (random breeds) each. These are to help the test user visualise the admins /plants dashboard with a proper user-base.
+
 
 ## Functionality / features
 
@@ -236,7 +240,14 @@ Project Management Tools
 
 ### Back-end Library
 
-
+| #    | Library                                                      |
+| ---- | ------------------------------------------------------------ |
+| 1    | Rubocop-rails: A [RuboCop](https://github.com/rubocop-hq/rubocop) extension focused on enforcing Rails best practices and coding conventions. |
+| 2    | Aws-sdk-s3: AWS S3 SDK for Ruby, allows Ruby/Rails to integrate easily with a AWS S3 Bucket. |
+| 3    | Rspec-rails: Allows us to integrate the RSpec testing framework into rails. Provides many helper methods and internal libraries for writing automated tests. |
+| 4    | Shoulda-matchers: Providers one-liners that plug-in to RSPec or Minitest. Simplifies writing tests and reduces chance of writing broken tests. |
+| 5    | Database_cleaner: A set of gems that allows us to clear/reset out database during tests as to not effect our development/production databases and to avoid cross-contamination of database entries between tests. |
+| 6    | Simplecov: A code coverage analysis tool for Ruby, allows us to easily/automatically find out what percentage of our codebase is being tested and gives insight into specific areas requiring more attention. |
 
 
 

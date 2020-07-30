@@ -100,7 +100,7 @@ This will load the React front-end of Plantogotchi in a new tab of your default 
 
 3: This application require an installation of PostgreSQL to run which can download from the following -https://www.postgresql.org/download/
 
-Run the following commands in the order listed below
+Run the following commands in the order listed below:
 
 Install rails dependencies
 ```
@@ -118,7 +118,7 @@ Seed the database with different plants breed and test users
 ```
 rails db:seed
 ```
-start the rails server
+Start the rails server
 ```
 rails start
 ```
@@ -263,14 +263,14 @@ Project Management Tools
 
 ### Back-end Library
 
-| #    | Library                                                      |
-| ---- | ------------------------------------------------------------ |
-| 1    | Rubocop-rails: A [RuboCop](https://github.com/rubocop-hq/rubocop) extension focused on enforcing Rails best practices and coding conventions. |
-| 2    | Aws-sdk-s3: AWS S3 SDK for Ruby, allows Ruby/Rails to integrate easily with a AWS S3 Bucket. |
-| 3    | Rspec-rails: Allows us to integrate the RSpec testing framework into rails. Provides many helper methods and internal libraries for writing automated tests. |
-| 4    | Shoulda-matchers: Providers one-liners that plug-in to RSPec or Minitest. Simplifies writing tests and reduces chance of writing broken tests. |
-| 5    | Database_cleaner: A set of gems that allows us to clear/reset out database during tests as to not effect our development/production databases and to avoid cross-contamination of database entries between tests. |
-| 6    | Simplecov: A code coverage analysis tool for Ruby, allows us to easily/automatically find out what percentage of our codebase is being tested and gives insight into specific areas requiring more attention. |
+| #   | Library                                                                                                                                                                                                           |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Rubocop-rails: A [RuboCop](https://github.com/rubocop-hq/rubocop) extension focused on enforcing Rails best practices and coding conventions.                                                                     |
+| 2   | Aws-sdk-s3: AWS S3 SDK for Ruby, allows Ruby/Rails to integrate easily with a AWS S3 Bucket.                                                                                                                      |
+| 3   | Rspec-rails: Allows us to integrate the RSpec testing framework into rails. Provides many helper methods and internal libraries for writing automated tests.                                                      |
+| 4   | Shoulda-matchers: Providers one-liners that plug-in to RSPec or Minitest. Simplifies writing tests and reduces chance of writing broken tests.                                                                    |
+| 5   | Database_cleaner: A set of gems that allows us to clear/reset out database during tests as to not effect our development/production databases and to avoid cross-contamination of database entries between tests. |
+| 6   | Simplecov: A code coverage analysis tool for Ruby, allows us to easily/automatically find out what percentage of our codebase is being tested and gives insight into specific areas requiring more attention.     |
 
 
 
@@ -471,6 +471,43 @@ Below is a demo for the wire-frame, clicking on this [**link**](https://www.figm
 
 Please visit this [**link**](https://www.figma.com/file/bPJuz1UPRUSFjCFz4lDSTF/CODER-FINALPROJECT-A?node-id=0%3A1) to view the wire-frames. Navigate to the prototype tab in Figma will highlight the relationship between each pages in greater detail.
 
+## Screenshots
+
+---
+
+Home Page
+
+<img src="./docs/screenshots/home.png" width="80%">
+
+About Page
+
+<img src="./docs/screenshots/about.png" width="80%">
+
+Faq Page
+
+<img src="./docs/screenshots/faq.png" width="80%">
+
+Login Page
+
+<img src="./docs/screenshots/login.png" width="80%">
+
+Sign Up Page
+
+<img src="./docs/screenshots/signup.png" width="80%">
+
+Tablet Plants
+
+<img src="./docs/screenshots/tablet-plant.png" width="60%">
+
+Tablet App Interaction Screen
+
+<img src="./docs/screenshots/tablet-app.png" width="60%">
+
+Mobile friendly
+
+<img src="./docs/screenshots/mobile-friendly.png" width="60%">
+
+
 ## Task Management
 
 ---
@@ -485,28 +522,63 @@ Below is the Trello board progress for Part A of the project:
 
 Trello Link:
 
-https://trello.com/b/DdUvzfZU/final-project-part-a-coder
+Part A - https://trello.com/b/DdUvzfZU/final-project-part-a-coder
+
+Part B - https://trello.com/b/ohUHrh5w/final-project-part-b-coder
+
+### Part A (Design Phase)
+
+---
 
 Day One:
 
 On Day One we mainly focused on gathering inspiration and delegating the first set of tasks to individual team members according to their strengths and weaknesses. Day one is relatively empty because we spent a huge amount of our time having a meeting to plan out the features of the application, in accordance to the criteria for the project. 
 
-<img src="./docs/Trello/DAY-1.png" width="80%">
+<img src="./docs/Trello-A/DAY-1.png" width="80%">
 
 Day Two:
 
 Day Two represents the starting point of the project, we had a quick meeting in the morning to discuss and delegate the tasks for the day. During the meeting we created the ERD as a team (via pair programming) so we both understand the information we need to store for the application. We also spent the entire day planning and setting up the overall objectives to effectively meet the deadline of the project.
 
-<img src="./docs/Trello/DAY-2.png" width="80%">
+<img src="./docs/Trello-A/DAY-2.png" width="80%">
 
 Day Three:
 
 Day Three involves starting and finishing off the design elements of the application such as wire-frames, user stories and discussing about the features we need to create in order to meet our MVP for the application. Today we also studied the criteria in more details to ensure we are meeting the requirements for Distinction to High Distinction for the assessment.
 
-<img src="./docs/Trello/DAY-3.png" width="80%">
+<img src="./docs/Trello-A/DAY-3.png" width="80%">
 
 Day Four:
 
 Day Four was the designated final day we allocated for Part A of the project as we wanted to prioritise development time to work on Part B. Day four mainly involve proofreading the Readme and adding all relevant details to ensure we met the set criteria of the assessment. We also included attachments within the Trello cards to showcase the tasks we have completed as well as to gather input in regards to what else we needed to include in our documentation. 
 
-<img src="./docs/Trello/DAY-4.png" width="80%">
+<img src="./docs/Trello-A/DAY-4.png" width="80%">
+
+
+### Part B (Building Phase)
+
+---
+
+Day One:
+
+On Day One we mainly focused on gathering inspiration and delegating the first set of tasks to individual team members according to their strengths and weaknesses. Day one is relatively empty because we spent a huge amount of our time having a meeting to plan out the features of the application, in accordance to the criteria for the project. 
+
+<img src="./docs/Trello-B/DAY-1.png" width="80%">
+
+Day Two:
+
+Day Two represents the starting point of the project, we had a quick meeting in the morning to discuss and delegate the tasks for the day. During the meeting we created the ERD as a team (via pair programming) so we both understand the information we need to store for the application. We also spent the entire day planning and setting up the overall objectives to effectively meet the deadline of the project.
+
+<img src="./docs/Trello-B/DAY-2.png" width="80%">
+
+Day Three:
+
+Day Three involves starting and finishing off the design elements of the application such as wire-frames, user stories and discussing about the features we need to create in order to meet our MVP for the application. Today we also studied the criteria in more details to ensure we are meeting the requirements for Distinction to High Distinction for the assessment.
+
+<img src="./docs/Trello-B/DAY-3.png" width="80%">
+
+Day Four:
+
+Day Four was the designated final day we allocated for Part A of the project as we wanted to prioritise development time to work on Part B. Day four mainly involve proofreading the Readme and adding all relevant details to ensure we met the set criteria of the assessment. We also included attachments within the Trello cards to showcase the tasks we have completed as well as to gather input in regards to what else we needed to include in our documentation. 
+
+<img src="./docs/Trello-B/DAY-4.png" width="80%">

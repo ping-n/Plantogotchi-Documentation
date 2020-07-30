@@ -1,4 +1,4 @@
-# Plantogotchi
+RPlantogotchi
 
 ## Table of Contents:
 
@@ -125,7 +125,30 @@ rails start
 
 The back-end server will need to be running alongside the front-end server to enjoy the intended experience of Plantogotchi.
 
-### Testing Data
+##### Cors
+
+By default the following URLs are whitelisted in the CORS configuration file:
+
+* 'http://localhost:3000'
+* 'http://localhost:3001'
+* 'http://localhost:8080', 
+* 'https://plantogotchi.netlify.app'
+
+If you plan on running the client-side server on a different port, you will need to manually add this localhost URL to the '/config/initializers/cors.rb' file.
+
+##### Rspec
+
+You can run the RSpec suite tests by running the following command in your terminal within the root directory of the ''/plantogotchi-api' repository.
+
+```bash
+bin/rspec
+```
+
+##### Testing API with Postman
+
+[Our Postman documentation](https://documenter.getpostman.com/view/11888283/T17Q6k6B?version=latest) outlines how to hit all the accessible endpoints of our API both locally and in production.
+
+### Testing Information
 
 ---
 
@@ -138,6 +161,10 @@ Test Users
 
 - Admin user will have the ability to create new breeds and perform CRUD on plants and breeds. Admin User will also have access to sliders to control element of the application.
 - Normal user will only have the ability to create new plants and interact with their plants.
+
+Seed Data
+
+* There are also 10 additional seed users, with 5 plants (random breeds) each. These are to help the test user visualise the admins /plants dashboard with a proper user-base.
 
 
 ## Functionality / features
@@ -236,7 +263,14 @@ Project Management Tools
 
 ### Back-end Library
 
-
+| #    | Library                                                      |
+| ---- | ------------------------------------------------------------ |
+| 1    | Rubocop-rails: A [RuboCop](https://github.com/rubocop-hq/rubocop) extension focused on enforcing Rails best practices and coding conventions. |
+| 2    | Aws-sdk-s3: AWS S3 SDK for Ruby, allows Ruby/Rails to integrate easily with a AWS S3 Bucket. |
+| 3    | Rspec-rails: Allows us to integrate the RSpec testing framework into rails. Provides many helper methods and internal libraries for writing automated tests. |
+| 4    | Shoulda-matchers: Providers one-liners that plug-in to RSPec or Minitest. Simplifies writing tests and reduces chance of writing broken tests. |
+| 5    | Database_cleaner: A set of gems that allows us to clear/reset out database during tests as to not effect our development/production databases and to avoid cross-contamination of database entries between tests. |
+| 6    | Simplecov: A code coverage analysis tool for Ruby, allows us to easily/automatically find out what percentage of our codebase is being tested and gives insight into specific areas requiring more attention. |
 
 
 

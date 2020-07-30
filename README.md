@@ -1,4 +1,4 @@
-Plantogotchi
+# Plantogotchi
 
 ## Table of Contents:
 
@@ -59,7 +59,7 @@ Please clone Plantogotchi from the following repository:
 
 React Front-end repository - https://github.com/ping-n/plantogotchi-client
 
-React Back-end repository - https://github.com/novacoole/plantogotchi-api
+Rails Back-end repository - https://github.com/novacoole/plantogotchi-api
 
 ### Front-end installation
 
@@ -264,6 +264,7 @@ Project Management Tools
 | 9   | Github: Web repository hosting service, which allow members within the team to collaborate on the project as well as providing a remote backup of source code. |
 | 10  | Trello: A web application that allow team members to manage the project by creating and assigning tasks.                                                       |
 | 11  | Discord: An application for instant messaging and VoIP service. We use discord to communicate ideas and hold daily stand ups.                                  |
+| 12  | S3 Bucket: Online storage for our breeds spritesheet, s3 is an AWS service which provide online hosting for images.                                             |
 
 
 ## External Library
@@ -573,7 +574,7 @@ This project utilises Trello as a project management tool which allows us to all
 
 We have provided screenshots below to illustrate the progress of the project each day. As a team we have a daily stand-up in which we go through what we have done the previous day and what we plan to do that day. We also allocate each card/task to a specific member to complete each day. Within the Trello board we utilise the built-in features such as colour labels and checklist to effectively plan and delegate tasks through the member assigning system. 
 
-We also kept dev journal within our Trello board for part B to let each member know what the other person worked on that day and also allow us to keep track of tasks that we have accomplished.
+We also kept a dev journal within our Trello board for part B to let each member know what the other person worked on that day and also allow us to keep track of tasks that we have accomplished.
 
 Below is the Trello board progress for the project:
 
@@ -624,19 +625,19 @@ On day one, we started off by planning and talking about the actual logic of our
 
 Day Two:
 
-Day Two involve more planning as a team, such as we library we could use to build the application. Alex was assigned the responsibility to work on the back-end, while I set up react structure for the front-end and begin researching library such Formik and Css framework we could use to speed up development time. 
+Day Two involve more planning as a team, such as which library we could use to build the application. Alex was assigned the responsibility to work on the back-end, while I set up react structure for the front-end and begin researching library such Formik and Css framework we could use to speed up development time. 
 
 <img src="./docs/Trello-B/DAY-2.png" width="80%">
 
 Day Three:
 
-Day Three involves finishing the MVP of the rails api and research on how to implement authentication to our application. As a team we settle on using jwt token as a form of authentication. I worked on implementing the basic route we need to get start. 
+Day Three involves finishing the MVP of the rails api and research on how to implement authentication to our application. As a team we settle on using jwt token as main form of authentication. I worked on implementing the basic route we need to get start. 
 
 <img src="./docs/Trello-B/DAY-3.png" width="80%">
 
 Day Four:
 
-Day Four we had our daily stand up and a short meeting where we decided to use semantic-ui-react for styling our application. Alex finished off rails api which give us access to a live database which we can use to start testing out basic user authentication. We implemented JWT token with knock and did more research on how to implement it with the front-end by having protected route.  
+Day Four we had our daily stand up and a short meeting where we decide to use semantic-ui-react for styling our application. Alex finished off rails api which give us access to a live database which we can use to start testing out basic user authentication. We implemented JWT token with knock and did more research on how to implement it with the React front-end by having protected route.  
 
 <img src="./docs/Trello-B/DAY-4.png" width="80%">
 
@@ -648,25 +649,25 @@ Day Five we begin with our daily stand up and delegated each other some tasks. I
 
 Day Six:
 
-Day Six involved finishing all the CRUD functionalities within our application and begin creating the static html pages. Alex worked on the CRUD for breeds and Plants. I worked on finishing all the static pages such as Home, FAQ and About.
+Day Six involved finishing all the CRUD functionalities within our application and begin creating the static html pages. Alex worked on CRUD functionality for breeds and Plants. I worked on finishing all of the static pages such as Home, FAQ and About.
 
 <img src="./docs/Trello-B/DAY-6.png" width="80%">
 
 Day Seven:
 
-Day Seven begin with a meeting in the morning to discuss about current state of the application and any last minute feature we should include in our application. Alex begin going our huge bug list on trello and begin debugging. While I worked on styling teh application and finalizing the design of our application and main plant pages.
+Day Seven begin with a meeting in the morning to discuss about current state of the application and any last minute feature we could include in our application. Alex begin going debugging our huge bug list on trello. While I worked on styling the application and finalizing the design of our application.
 
 <img src="./docs/Trello-B/DAY-7.png" width="80%">
 
 Day Eight:
 
-Day Eight is all about hitting the MVP for our application. We removed any libraries we wasn't using in the application and deployed to netlify. I changed some styling to make the application responsive on mobile and started manual testing to find any major bugs. Alex started manual testing for the rails api and fixed many of our existing bugs.
+Day Eight is all about hitting the MVP for our application. We removed any libraries we weren't using in the application and deployed to netlify. I changed some styling to make the application responsive on mobile and started manual testing to find any major bugs. Alex started manual testing for the rails api and fixed many of our existing bugs.
 
 <img src="./docs/Trello-B/DAY-8.png" width="80%">
 
 Final Day:
 
-For the final day of the project, we begin with our daily stand up and discuss any more tasks we needed to complete to meet teh project criteria. Alex fixed all existing bugs while I finished off the manual testing post any bug I found on our Trello board so Alex can fix them. Once we are happy with the state, we worked on preparation to submit this project such as this Readme, presentation slides, linting all our repositories and finish off any leftover tasks on the Trello board. 
+For the final day of the project, we begin with our daily stand up and had a discussion in regard to any more tasks we need to complete to meet the criteria. Alex fixed all existing bugs while I finished off the manual testing. Once we are happy with our MVP, we worked on preparation to submit this project such as this Readme, presentation slides, linting all our repositories and finish off any leftover tasks on the Trello board. 
 
 <img src="./docs/Trello-B/DAY-9.png" width="80%">
 
@@ -674,7 +675,7 @@ For the final day of the project, we begin with our daily stand up and discuss a
 
 ---
 
-We delegate individual tasks according to our strengths and weaknesses. Alex prefer to work on the back-end and I was delegated with the front-end. We both had alot of fun designing and building the application within such a tight deadline.
+We delegate individual tasks according to our strengths and weaknesses. Alex prefer to work on the back-end and I was delegated with the front-end. We both had a lot of fun designing and building the application within such a tight deadline.
 
 Alex - Back-end api, React front-end, debugging, spritesheet animation, Manual testing(api), back-end testing, styling the main plant modal amd Documentation.
 

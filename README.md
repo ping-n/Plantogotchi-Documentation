@@ -121,12 +121,6 @@ Project Management Tools
 | 3    | Semantic-ui-css: Allow us to import the css styling from semantic ui, we are using a less version which give us more control over semantic ui default styling. |
 | 4    | Node Sass: Node-sass is library that bind Node.js to Libsass, which allow us to write scss in this project as it automatically compile scss into css. |
 | 5    | React-router-dom:  |
-| 6    | Netlify: A deployment platform to host the front end of web application (React). |
-| 7    | PostgreSQL: A relational database management system to hold all of the persistent data from the web application. |
-| 8    | Git: Version control to backup source code of the application in local environment. |
-| 9    | Github: Web repository hosting service, which allow members within the team to collaborate on the project as well as providing a remote backup of source code. |
-| 10   | Trello: A web application that allow team members to manage the project by creating and assigning tasks. |
-| 11   | Discord: An application for instant messaging and VoIP service. We use discord to communicate ideas and hold daily stand ups. |
 
 
 ### Back-end Library

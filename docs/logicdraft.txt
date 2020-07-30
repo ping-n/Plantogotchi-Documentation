@@ -1,0 +1,56 @@
+water_level = 100
+
+growth_speed = 20000
+
+20000 * 100 = 2000000
+
+every 20sec water_level drop by 1
+
+growth_limit = when water_level is >= 50%
+
+growth_stage = 
+	default = 0
+	plant attribute which it take from the breed (max_growth)
+
+grow()
+ update growth_stage
+ every growth_speed it increase growth_stage by 1
+
+waterdrop_rate = 20000
+
+dropWaterLevel()
+	every drop_rate decrease water by 1
+
+if water_level === 0
+	change alive to false
+
+if growth_stage === max_growth
+	plant reached max growth
+	can no longer die
+	everything stop
+
+a user log in,
+	time_now = we grab time now
+
+when was the last event user took action
+	grab that time
+	check how much time have passed
+
+time_passed divide drop_rate
+	subtract from water_level
+
+
+if water was 80%
+
+ water is 40% when user logged in 
+
+80% - growth_limit(50%) = 30%
+
+30% * waterDrop_rate = 600000
+	60000 / 20000 = 30
+
+30 * growth_stage
+
+water is 40% 
+
+game finish

@@ -287,6 +287,7 @@ Project Management Tools
 | 4   | Shoulda-matchers: Providers one-liners that plug-in to RSPec or Minitest. Simplifies writing tests and reduces chance of writing broken tests.                                                                    |
 | 5   | Database_cleaner: A set of gems that allows us to clear/reset out database during tests as to not effect our development/production databases and to avoid cross-contamination of database entries between tests. |
 | 6   | Simplecov: A code coverage analysis tool for Ruby, allows us to easily/automatically find out what percentage of our codebase is being tested and gives insight into specific areas requiring more attention.     |
+| 7   | Knock: We used knock gem in our application for user authentication via JWT token                                                                                                                                 |
 
 
 
